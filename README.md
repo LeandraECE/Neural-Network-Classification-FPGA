@@ -13,8 +13,8 @@ This project implements a hardware-based neural network in Vivado to classify 32
 ## Memory System:
 Three pre-initialized memories:
 - Input Memory: 3,840×32-bit, storing rows of binary images.
-- Weights for Hidden Layer (FC1): 1024×128-bit (dual port), storing 4-bit weights for the hidden layer.
-- Weights for Output Layer (FC2): 80×32-bit (dual port), storing 8-bit weights for the output layer.
+- Weights for Hidden Layer (FC1): 1024×128-bit (dual port), storing 4-bit fixed-point weights for the hidden layer (scale = 2^-6,format Q-2.6).
+- Weights for Output Layer (FC2): 80×32-bit (dual port), storing 8-bit fixed-point weights for the output layer (scale = 2^-8, format Q0.8).
 The memorys are in the IP folder and the Coefficient Files folder contains the files with the image and weights data.
 
 ## Usage

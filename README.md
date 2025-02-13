@@ -1,5 +1,5 @@
 # Neural Network Image Classifier on FPGA
-This project implements a hardware-based neural network to classify 32×32 binary images of handwritten digits using a 3-layer architecture. The classification uses the MNIST dataset subset and is designed for deployment on the Basys3 FPGA development board.
+This project implements a hardware-based neural network in Vivado to classify 32×32 binary images of handwritten digits using a 3-layer architecture. The classification uses the MNIST dataset subset and is designed for deployment on the Basys3 FPGA development board.
 
 ## Neural Network Architecture:
 1. Input:
